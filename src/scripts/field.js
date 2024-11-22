@@ -5,4 +5,4 @@ export const addPlant = (seedObject) => {
 }
 
 export const usePlants = () =>
-    plants.map((plant) => (plant))
+    plants.map(plant => plant)
