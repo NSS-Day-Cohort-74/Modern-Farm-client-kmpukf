@@ -53,7 +53,7 @@ export const plantSeeds = (yearlyPlan) => {
             if (plot === "Soybean") {
                 addPlant(createSoybean())
             }
-            if (plot == "sunflower") {
+            if (plot == "Sunflower") {
                 addPlant(createSunflower())
             }
             if (plot === "Wheat") {
