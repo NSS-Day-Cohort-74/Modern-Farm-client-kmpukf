@@ -14,8 +14,17 @@ const harvested = []
 
 export const harvestPlants = (plants) => {
     for (const plant of plants) {
-        for (let i = 0; i < plant.output; i++) {
-            harvested.push(plant)
+        if(Array.isArray(plant)) {
+            for (const corn of plant) {
+                for (let i = 0; i < corn.output / 2; i++){
+                    harvested.push(corn)
+                }
+            }
+        }
+        else {
+            for(let i = 0; i < plant.output; i++) {
+                harvested.push(plant)
+            }
         }
     }
     return harvested
